@@ -436,3 +436,4 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .about .stats { grid-column: 1; margin-top: 72px; }
   .about .facts { grid-column: 2; margin-top: 72px; }
 }
+.is-cms .pill-solid, .is-cms .pill-solid i { color: #fff; }
