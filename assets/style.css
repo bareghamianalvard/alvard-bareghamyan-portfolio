@@ -431,7 +431,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (min-width: 1025px) {
   .about > .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); column-gap: 56px; align-items: start; }
   .about .statement { grid-column: 1 / -1; max-width: none; }
-  .about .statement-sub { grid-column: 2; max-width: none; margin: 56px 0 0; }
+  .about .statement-sub { grid-column: 1 / -1; max-width: 860px; margin: 40px 0 0; }
   .about .about-grid { display: contents; }
   .about .stats { grid-column: 1; margin-top: 72px; }
   .about .facts { grid-column: 2; margin-top: 72px; }
