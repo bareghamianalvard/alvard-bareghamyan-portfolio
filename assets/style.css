@@ -440,3 +440,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* White body text */
 .lead, .p-lead, .svc-list p, .steps p, .card-text, .sec-note, .stat span { color: #fff; opacity: 1; }
+
+/* Highlighted note */
+.p-also { margin-top: 32px; padding: 20px 24px; border-radius: 16px; border: 1px solid rgba(254,124,0,.35); border-left: 4px solid var(--orange); background: linear-gradient(90deg, rgba(254,124,0,.16), rgba(254,124,0,.05)); color: #fff; font-size: clamp(16px, 1.2vw, 20px); font-weight: 600; line-height: 1.6; }
+.p-also b { margin-right: 10px; padding: 3px 10px; border-radius: 999px; background: var(--orange); color: #fff; font-size: .8em; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
