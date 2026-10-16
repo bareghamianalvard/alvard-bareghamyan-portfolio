@@ -394,3 +394,35 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .promo-txt span:nth-child(4) { animation-delay: 4.5s; }
 @keyframes langText { 0%, 22% { opacity: 1; transform: none; } 2% { opacity: 1; } 25%, 100% { opacity: 0; transform: translateY(3px); } }
 @media (prefers-reduced-motion: reduce) { .promo-txt span:first-child { opacity: 1 !important; } }
+
+/* Uppercase headings, labels and buttons */
+.links a, .pill, .logo, .who, .tile-label, .tile-foot, .sec-top h2, .work-head, .svc-col h3, .svc-list h4, .steps h4,
+.card-title, .card-meta, .card-link, .p-kicker, .p-hero h1, .p-facts dt, .facts dt, .ba-head h3, .ba-dev, .ba-tag, .status,
+.tags span, .stat span, .kicker, .contact h2, .next-label, .next-name, .foot-inner, .back, .steps .n, .svc-list .n {
+  text-transform: uppercase;
+}
+.links a, .pill, .tile-foot, .card-meta, .p-kicker, .p-facts dt, .facts dt, .ba-dev, .ba-tag, .status, .tags span, .stat span, .kicker, .next-label, .back, .foot-inner { letter-spacing: .06em; }
+.mail, .snippet, .snippet *, .statement, .statement-sub, .lead, .card-text, .p-lead, .svc-list p, .steps p { text-transform: none; letter-spacing: normal; }
+
+/* Full-width hero */
+.nav .wrap, .hero .wrap { max-width: none; padding-inline: clamp(20px, 3.6vw, 96px); }
+.hero { padding: 0; }
+.hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: clamp(32px, 4.5vw, 120px); align-items: stretch; min-height: calc(100vh - 68px); padding-block: clamp(28px, 5vh, 80px); }
+.hero-copy { display: flex; flex-direction: column; justify-content: center; }
+.hero h1 { font-size: clamp(42px, 5.8vw, 120px); }
+.who { font-size: clamp(14px, 1vw, 20px); margin-bottom: clamp(18px, 2.4vh, 32px); }
+.who b { font-size: clamp(17px, 1.3vw, 26px); }
+.lead { max-width: min(640px, 100%); font-size: clamp(18px, 1.35vw, 26px); margin: clamp(22px, 3vh, 40px) 0 clamp(26px, 4vh, 48px); }
+.pill { font-size: clamp(15px, 1.05vw, 20px); padding: clamp(14px, 1.2vw, 22px) clamp(24px, 2vw, 40px); }
+.panel { align-self: stretch; height: 100%; gap: clamp(14px, 1.2vw, 28px); padding: clamp(14px, 1.2vw, 28px); border-radius: clamp(26px, 2vw, 40px); }
+.tile { min-height: 0; padding: clamp(22px, 1.8vw, 40px); border-radius: clamp(18px, 1.5vw, 30px); }
+.tile-label { font-size: clamp(24px, 1.8vw, 36px); }
+.tile-foot { font-size: clamp(14px, 1vw, 20px); }
+@media (min-width: 1025px) { .tile .mini { zoom: 1.22; } }
+@media (min-width: 1500px) { .tile .mini { zoom: 1.5; } }
+@media (min-width: 1800px) { .tile .mini { zoom: 1.75; } }
+@media (min-width: 2200px) { .tile .mini { zoom: 2.1; } }
+@media (max-width: 1024px) { .hero-grid { grid-template-columns: 1fr; min-height: 0; } .panel { height: auto; } .tile { min-height: 420px; } }
+@media (max-width: 720px) { .tile { min-height: 360px; } }
+.project-page .nav .wrap { max-width: 1320px; padding-inline: 32px; }
+@media (max-width: 720px) { .project-page .nav .wrap { padding-inline: 16px; } }
